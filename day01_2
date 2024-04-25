@@ -29,7 +29,6 @@ def firstNumber(element):
             return 8
         elif extend_elem1[i] == "n" and extend_elem1[i + 1] == "i" and extend_elem1[i + 2] == "n" and extend_elem1[i + 3] == "e":
             return 9
-        i += 1
 # Dernier chiffre
 def lastNumber(element):
     extend_elem2 = []
@@ -55,7 +54,6 @@ def lastNumber(element):
             return 8
         elif extend_elem2[-1-i] == "e" and extend_elem2[-2-i] == "n" and extend_elem2[-3-i] == "i" and extend_elem2[-4-i] == "n":
             return 9
-        i += 1
 
 for k in calibration_doc:
     sum += int(firstNumber(k)) * 10 + int(lastNumber(k))
